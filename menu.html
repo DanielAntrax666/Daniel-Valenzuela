@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+          <link href="https://fonts.cdnfonts.com/css/vaporized-bb" rel="stylesheet">
+                
+     <title>Calculadora</title>
+</head>
+<body>
+    <style>
+        img{
+            width: 200px;
+            height: auto;
+        }
+            table, th,td{
+                border: 1px dotted  rgb(230, 255, 3);
+            }
+            table{
+                width: 80%;
+                margin-top: 20px;
+                border-collapse: collapse;
+                box-shadow: 0 5px 15px rgb(17, 255, 0);
+                margin-left: 50px;
+            }
+            th,tr{
+                text-align: left;
+                padding: 8px;
+            }
+            tr:nth-child(even){
+                background-color: rgb(36, 255, 3);
+            }
+            tr:hover{
+                background-color: rgb(126, 126, 126);
+            }
+    </style>
+        <div style="margin: 24px;">
+            <nav class="nav nvbar-ligth"
+            style="background-color: rgb(45, 142, 0);">
+            <div class="container">
+                <a class="navbar-brand" href="index.html" style="color: rgb(0, 0, 0); font-family: 'Vaporized BB', sans-serif;
+                ">inicio</a>
+        <div class="collapse navbar-collapse" id="navbarNavDropwn">
+            <ul class="nav navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDrownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    style="font-family: 'Vaporized BB', sans-serif;
+                    ">unidad 1</a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDrownMenuLink">
+                         <a class="dropdown-item" href="perfil.html" style="font-family: 'Vaporized BB', sans-serif;
+                         ">Perfil</a><br>
+                         <a class="dropdown-item" href="calculadora.html" style="font-family: 'Vaporized BB', sans-serif;
+                         ">Calculadora</a><br>
+                         <a class="dropdown-item" href="portada.html" style="font-family: 'Vaporized BB', sans-serif;
+                         ">Tienda</a>
+                      </div>
+                    </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDrownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: 'Vaporized BB', sans-serif;
+                ">unidad 2</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDrownMenuLink">
+                   <a class="dropdown-item" href="Tienda Pedido 1.html" style="font-family: 'Vaporized BB', sans-serif;
+                   ">Tienda pedido 1</a><br>
+                   <a class="dropdown-item" href="json.html" style="font-family: 'Vaporized BB', sans-serif;
+                   ">json</a><br>
+                   <a class="dropdown-item" href="tiendapedido2.html"style="font-family: 'Vaporized BB', sans-serif;
+                   ">Tienda pedido 2</a>
+                </div>
+               </li>
+                    <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbarDrownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: 'Borneo', sans-serif;
+                         "
+                         >unidad 3</a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropwnMenuLink">
+                             <a class="dropdown-item" href="basededatos.html" style="font-family: 'Vaporized BB', sans-serif;
+                             ">Base de datos</a><br>
+                             <a class="dropdown-item" href="peliculas.html"style="font-family: 'Vaporized BB', sans-serif;
+                             ">Peliculas</a><br>
+                           </div>
+                         </li>
+                       </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+<h1 style="font-family: 'Vaporized BB', sans-serif;">Bebidas</h1>
+                <table>
+            <tr>
+                <th style="font-family: 'Vaporized BB', sans-serif;">Foto de los platillos</th>
+                <th style="font-family: 'Vaporized BB', sans-serif;">Descripcion</th>
+                <th style="font-family: 'Vaporized BB', sans-serif;">Precio</th>
+            </tr>
+            <tr>
+                <td><img src="img/bebida1.jpeg" alt="Postres"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;">Vaso de agua refrescante con hielos </p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$5.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/bebida2.jpg" alt="Desayuno"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;">Vaso con coca-cola refrescante paara un dia caliente
+
+                </p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$20.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/bebida3.jpeg" alt="Desayuno"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;">Piña Colada
+                </p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$35.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/bebida4.webp" alt="Desayuno"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;">Una copa de vino 100% Mexicano
+                </p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$30.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/bebida5.jpeg" alt="Desayuno"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;">Un baso de tequila para andar bien aca con los amigos
+                </p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$40.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/bebida6.jpg" alt="Desayuno"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;">Un vaso con la mas refrescantes de las aguas, la Horchata</p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$55.00</td>
+            </tr>
+            
+
+                </table>
+<h1 style="font-family: 'Vaporized BB', sans-serif;">Postres</h1>
+                <table>
+            <tr>
+                <th style="font-family: 'Vaporized BB', sans-serif;">Foto de los platillos</th>
+                <th style="font-family: 'Vaporized BB', sans-serif;">Descripcion</th>
+                <th style="font-family: 'Vaporized BB', sans-serif;">Precio</th>
+            </tr>
+            <tr>
+                <td><img src="img/Carlota de limón.webp" alt="Postres"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;">bandeja de Carlota de limón </p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$50.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/postre2.webp" alt="Desayuno"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;">Postre de chocolate con nuez
+
+                </p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$35.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/postre3.webp" alt="Desayuno"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;">Pastel helado de churros y dulce de leche
+                </p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$35.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/postre4.webp" alt="Desayuno"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;">Gelatina de Fresas con Crema
+                </p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$30.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/postre5.webp" alt="Desayuno"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;">Arroz con leche y chía de vainilla
+                </p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$40.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/postre6.webp" alt="Desayuno"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;">Cheesecake de mamey</p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$55.00</td>
+            </tr>
+            
+
+                </table>
+                
+<h1 style="font-family: 'Vaporized BB', sans-serif;">Desayunos</h1>
+                <table>
+            <tr>
+                <th style="font-family: 'Vaporized BB', sans-serif;">Foto de los platillos</th>
+                <th style="font-family: 'Vaporized BB', sans-serif;">Descripcion</th>
+                <th style="font-family: 'Vaporized BB', sans-serif;">Precio</th>
+            </tr>
+            <tr>
+                <td><img src="img/desayuno1.jpg" alt="Desayunos"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;">BIRRIA DE RES BIEN SABROSA </p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$50.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/desayuno2.jpg" alt="Desayuno"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;">Una tortilla de maíz gruesa, originalmente frita con manteca, sobre la que se agregan
+                     diferentes ingredientes, como chicharrón o carne, queso, verduras y salsa picante. Para aquellos que conocen algo de la comida mexicana, son el punto medio entre una quesadilla y un sope.
+
+                </p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$35.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/desayuno3.jpg" alt="Desayuno"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;">Pan de yema con chocolate
+
+                </p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$35.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/desayuno4.jpg" alt="Desayuno"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;">Huevos a la mexicana
+                </p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$30.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/desayuno5.jpg" alt="Desayuno"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;">Entomatadas
+                </p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$40.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/desayuno6.jpeg" alt="Desayuno"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;">Menudo o pancita</p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$55.00</td>
+            </tr>
+            
+
+                </table>
+<h1 style="font-family: 'Vaporized BB', sans-serif;">Sabores de helados</h1>
+                <table>
+            <tr>
+                <th style="font-family: 'Vaporized BB', sans-serif;">Foto de los platillos</th>
+                <th style="font-family: 'Vaporized BB', sans-serif;">Descripcion</th>
+                <th style="font-family: 'Vaporized BB', sans-serif;">Precio</th>
+            </tr>
+            <tr>
+                <td><img src="img/h1.jpg" alt="Desayunos"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;">Helado de aguacate </p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$50.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/h2.jpg" alt="Desayuno"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;">Helado de pétalos de rosa
+                    Uno de nuestros sabores favoritos por su sensación dulce y frutal, esta receta originaria del estado de Veracruz ya se convirtió en un clásico para los mexicanos. Combínalo con helado de pistache para agregarle un toque extra de frescura.
+                    
+                    
+                </p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$35.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/h3.jpg" alt="Desayuno"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;">Helado de elote
+                    Siendo México la tierra del maíz, era de esperarse que tuviéramos un delicioso helado de este sabor, así que si te gusta el pan de elote o los tamalitos dulces, este helado te encantará. El exquisito sabor de sus ingredientes te atrapará en cada cucharada.
+
+                </p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$35.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/h4.jpg" alt="Desayuno"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;"> Helado de Jamaica con mezcal
+                    La bebida caída del cielo y la beneficiosa flor de Jamaica se fusionaron para explotar nuestros sentidos con este sabor sinigual. Ideal para esas noches de verano, en las que quieres probar algo nuevo y fresco.
+                    
+                    
+                </p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$30.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/h5.jpg" alt="Desayuno"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;"> Helado de zapote
+                    De la misma familia del mamey, el helado de zapote llegó a México para conquistar nuestros paladares con su sabor tropical. Una receta originaria del estado de Veracruz, pero que ya puedes encontrar en la mayoría de los estados.
+                </p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$30.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/h6.jpg" alt="Desayuno"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;">Helado de Gansito
+                    Uno de los pastelitos favoritos de los mexicanos hecho helado, famoso por su relleno cremosito de mermelada y cubierta de chocolate. El helado de Gansito es ideal para las personas que aman los postres con fresas o los sabores frutales. Su sabor hará que sea tu nuevo helado preferido</p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$25.00</td>
+            </tr>
+            
+
+                </table>
+
+
+<h1 style="font-family: 'Vaporized BB', sans-serif;">Dulces mexicanos</h1>
+                <table>
+            <tr>
+                <th style="font-family: 'Vaporized BB', sans-serif;">Foto de los platillos</th>
+                <th style="font-family: 'Vaporized BB', sans-serif;">Descripcion</th>
+                <th style="font-family: 'Vaporized BB', sans-serif;">Precio</th>
+            </tr>
+            <tr>
+                <td><img src="img/d1.webp" alt="Desayunos"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;">El mazapán pertenece a la repostería mexicana, al tener una base de almendras molidas y azúcar, es un dulce típico de México que se caracteriza por su textura suave y su sabor extra dulce.
+
+                </p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$10.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/d2.webp" alt="Desayuno"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;">Las empanaditas de dulce de leche están rellenas de una variedad de ingredientes dulces, como dulce de leche, cajeta (caramelo de leche de cabra), frutas o incluso chocolate.
+                    
+                </p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$10.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/d3.webp" alt="Desayuno"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;">La mestiza es un dulce típico de Michoacán elaborado a base de miel y frutas secas, como nueces, cacahuetes y almendras, en el cual se combinan lo dulce y lo salado.
+
+
+                </p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$35.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/d4.webp" alt="Desayuno"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;"> Los besitos de nuez son pequeños conos hechos de nueces picadas y caramelizadas que cuentan con chocolate derretido, creando una combinación perfecta de nueces crujientes y chocolate suave y dulce.
+
+
+                    
+                </p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$30.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/d5.webp" alt="Desayuno"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;"> Los besitos de canela consisten en pequeñas bolitas de masa de harina y canela, a menudo endulzadas con azúcar glas, por lo que son ideales para acompañar con un café.
+
+
+                </p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$30.00</td>
+            </tr>
+            <tr>
+                <td><img src="img/d6.webp" alt="Desayuno"></td>
+                <td><p style="font-family: 'Vaporized BB', sans-serif;">Los alfajores de dulce de leche son de origen español conformado por dos galletas suaves y dulces que se rellenan con dulce de leche o cajeta, además de ser espolvoreadas con azúcar glas.
+
+                </p></td>
+                <td style="font-family: 'Vaporized BB', sans-serif;">$25.00</td>
+            </tr>
+            
+
+                </table>
